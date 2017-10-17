@@ -1,1 +1,1 @@
-# timestamp
+A basic timestamp service
