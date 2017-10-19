@@ -20,7 +20,6 @@ app.get("/", function (request, response) {
 app.get("/:date", function (request, response) {
   var json = {"unix": null, "natural": null};
   var date = moment.unix(Number(request.params.date));
-  console.log(date);
   if(date.isValid()){
     json.unix = date.unix();
     json.natural = date.format("dddd, MMMM Do YYYY");
